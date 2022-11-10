@@ -9,11 +9,12 @@
 <script src="https://www.geogebra.org/apps/deployggb.js"></script>
   
 <BODY>
+  <center>
     <H1>Calculus Battleship</H1>
   <div id="ggb-element"></div> 
-
+</center>
 <script>  
-    var params = {"material_id":"nwjyeanc", "appName": "classic", "showToolBar": false, "showAlgebraInput": false, "showMenuBar": false };
+    var params = {"material_id":"nwjyeanc", "appName": "classic", "showFullscreenButton": true, "showAlgebraInput": false, "showMenuBar": false };
     var applet = new GGBApplet(params, true);
     window.addEventListener("load", function() { 
         applet.inject('ggb-element');
