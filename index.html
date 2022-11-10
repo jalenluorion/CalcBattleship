@@ -1,16 +1,23 @@
 <HTML>
 
 <HEAD>
-
+<meta name=viewport content="width=device-width,initial-scale=1">  
+<meta charset="utf-8"/>
 <TITLE>Battleship</TITLE>
 
 </HEAD>
-  
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
   
 <BODY>
-  
+  <div id="ggb-element"></div> 
   <H1>This is a test.</H1>
-<iframe src="https://www.geogebra.org/3d/vsapqe8z?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
-</BODY>
+<script>  
+    var params = {"material_id":"vsapqe8z", "appName": "3d", "width": 800, "height": 600, "showToolBar": false, "showAlgebraInput": false, "showMenuBar": false };
+    var applet = new GGBApplet(params, true);
+    window.addEventListener("load", function() { 
+        applet.inject('ggb-element');
+    });
+</script>
+  </BODY>
 
 </HTML>
